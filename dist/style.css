@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background: #dbc5ed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* design container */
+
+.container {
+  height: 550px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  /*   justify-content: center; */
+  align-items: center;
+  border: solid 2px rgba(5, 5, 5, 0.6);
+  border-radius: 25px;
+  background: white;
+}
+
+.container .content .imgbox {
+  height: 180px;
+  width: auto;
+  margin: 30px 0;
+}
+
+.container .content .imgbox img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.container .content h3 {
+  color: #613f75;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.container .content p {
+  color: #877799;
+  text-align: center;
+  padding: 0 15px;
+  margin: 0 0 40px 0;
+}
+
+.container .content .mobile-input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 50px;
+  visibility: visible;
+}
+
+.container .content .mobile-input-container span {
+  border-bottom: solid 2px gray;
+  margin-right: 10px;
+}
+span#border {
+  text-decoration: none;
+  border: none;
+  font-size: 1.2rem;
+}
+
+.container .content .mobile-input-container input {
+  border: none;
+  outline: none;
+  border-bottom: solid 2px gray;
+  font-weight: bold;
+  font-size: 1.05rem;
+  padding-left: 12px;
+  width: 150px;
+  letter-spacing: 0.2rem;
+}
+#registerBtn,
+#verifyBtn {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: #a169cf;
+  padding: 7px 100px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+#register:active,
+#registerBtn:focus,
+#verifyBtn:active,
+#verifyBtn:focus {
+  outline: none;
+  border: none;
+}
+
+#registerBtn:hover,
+#verifyBtn:hover {
+  background: #76469e;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.otp-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /*   visibility: hidden; */
+}
+
+input[type="number"] {
+  border: none;
+  outline: none;
+  border-bottom: solid 2px gray;
+  font-weight: bold;
+  font-size: 1.05rem;
+  padding-left: 12px;
+  width: 100px;
+  letter-spacing: 0.2rem;
+  margin-bottom: 50px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
